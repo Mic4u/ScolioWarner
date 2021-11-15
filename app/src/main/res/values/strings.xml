@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">ScolioWarner</string>
+    <string name="menuBtn1">New Measure</string>
+    <string name="menuBtn2">View Results</string>
+    <string name="back">return</string>
+    <string name="choose">Choose patient</string>
+
+    <string name="instruction">Instruction</string>
+    <string name="calibrate">Calibrate</string>
+
+    <string name="patientName">Patient Name</string>
+
+    <string name="measure">Measure</string>
+
+
+    <string name="save">Save Measure</string>
+    <string name="start">Start</string>
+    <string name="finish">Finish</string>
+    <string name="next">Next measure</string>
+
+
+    <string name="calibrated">Calibrated</string>
+
+    <string name="cobbangle">Cobb Angle</string>
+    <string name="leftangle">Angle to the left</string>
+    <string name="rightangle">Angle to the right</string>
+
+
+    <string name="toastSaved">RESULTS SAVED</string>
+    <string name="noName">NO NAME INPUTED</string>
+    <string name="containsSemicolon">NAME CAN NOT CONTAIN SEMICOLON</string>
+    <string name="measured">Measure finished</string>
+
+    <string name="instructionText">Mark each vertebra (each bony lump on the spine) on the skin of the patient (for example use felt tip pen, or marker, make sure it is easy to wash off) with an X. This step is not necessary, but it is recommended for accurate readings.
+
+        \n\nPress the NEW MEASURE button to begin the procedure.
+
+        \n\nFirst, you must calibrate the app. To do so, press the CALIBRATE button and place the device on the ground, and again, press the button to confirm.
+
+        \n\nThen you may start the measure. Press MEASURE button, and place the device at the bottom of spine, so the black line will align with centers of marked vertebrae. Press START button and start to move the device along marked vertebrae, closely following them with the black line. When you finish, press FINISH button and then take away the device from the back.
+        \nYou may also use this App as a regular scoliometer app, with reading appearing on the screen.
+        \nDo not measure your own back, ask for help.
+
+        \n\nInput the name of the patient, and press the SAVE MEASURE button to save the results. The name can not contain the semicolon.
+
+        \n\nYou can view all results in the VIEW RESULTS tab.
+
+        \n\nMeasure should be repeated once every six months to help detect scoliosis in early stages of development.
+
+        \n\nCobb angle is the way of measuring the degree of scoliosis. If the Cobb angle is greater than 10°, it might be a sign of scoliosis, and you should contact with a medical professional.
+
+        \n\nWARNING: ScolioWarners goal is to help to detect scoliosis in early stages of development and it should not be used as a replacement for professional diagnosis. If you think that you have scoliosis, contact a medical professional.</string>
+
+
+</resources>
