@@ -54,6 +54,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void onMenuBtn3click(View view) {
+
+        Intent intent = new Intent(this, RotationMeasure.class);
+        startActivity(intent);
+
+    }
+
     public static class Constant {
 
         public static int calibration;

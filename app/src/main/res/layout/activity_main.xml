@@ -7,6 +7,18 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/measure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:onClick="onMenuBtn3click"
+        android:text="@string/menuBtn3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Measure" />
+
+    <Button
         android:id="@+id/instructionBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -14,7 +26,7 @@
         android:onClick="onInstructionBtnClick"
         android:text="@string/instruction"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,11 +34,12 @@
         android:id="@+id/Measure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="44dp"
         android:onClick="onMenuBtn1click"
         android:text="@string/menuBtn1"
-        app:layout_constraintEnd_toEndOf="@+id/instructionBtn"
-        app:layout_constraintStart_toStartOf="@+id/instructionBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/instructionBtn" />
 
     <Button
@@ -36,8 +49,8 @@
         android:layout_marginTop="36dp"
         android:onClick="onMenuBtn2click"
         android:text="@string/menuBtn2"
-        app:layout_constraintEnd_toEndOf="@+id/Measure"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/Measure"
-        app:layout_constraintTop_toBottomOf="@+id/Measure" />
+        app:layout_constraintEnd_toEndOf="@+id/measure"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="@+id/measure"
+        app:layout_constraintTop_toBottomOf="@+id/measure" />
 </androidx.constraintlayout.widget.ConstraintLayout>

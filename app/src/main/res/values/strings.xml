@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">ScolioWarner</string>
     <string name="menuBtn1">New Measure</string>
+    <string name="menuBtn3">Rotation Measure</string>
     <string name="menuBtn2">View Results</string>
     <string name="back">return</string>
     <string name="choose">Choose patient</string>
@@ -16,7 +17,7 @@
     <string name="save">Save Measure</string>
     <string name="start">Start</string>
     <string name="finish">Finish</string>
-    <string name="next">Next measure</string>
+    <string name="next">Next</string>
 
 
     <string name="calibrated">Calibrated</string>
