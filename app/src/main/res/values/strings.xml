@@ -2,6 +2,7 @@
     <string name="app_name">ScolioWarner</string>
     <string name="menuBtn1">New Measure</string>
     <string name="menuBtn3">Rotation Measure</string>
+    <string name="SimpleMeasure">Simple Measure</string>
     <string name="menuBtn2">View Results</string>
     <string name="back">return</string>
     <string name="choose">Choose patient</string>
@@ -9,9 +10,21 @@
     <string name="instruction">Instruction</string>
     <string name="calibrate">Calibrate</string>
 
+    <string name="singleMeasure">Single Measure</string>
+    <string name="doubleMeasure">Double Measure</string>
+
     <string name="patientName">Patient Name</string>
 
+    <string name="compare">Compare</string>
+
+
+    <string name="RequiredPoints">Required Measure Points: </string>
+
+    <string name="WrongLength">Wrong number of measure points </string>
+
     <string name="measure">Measure</string>
+
+    <string name="filename">File Name:</string>
 
 
     <string name="save">Save Measure</string>

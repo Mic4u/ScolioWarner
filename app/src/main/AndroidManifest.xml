@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ib.scoliowarner">
 
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -11,28 +11,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ScolioWarner">
+        <activity android:name=".precise.RotationViewer"></activity>
+        <activity android:name=".precise.RotationSave" />
+        <activity android:name=".precise.MeasureType" />
+        <activity android:name=".precise.RotationResultViewer" />
+        <activity android:name=".precise.RotationMain" />
+        <activity android:name=".simple.SimpleMain" />
         <activity
-            android:name=".RotationMeasure"
+            android:name=".precise.RotationMeasure"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".Measure"
+            android:name=".simple.Measure"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".Calibrate"
+            android:name=".simple.Calibrate"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".Instruction"
+            android:name=".simple.Instruction"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ResultViewer"
+            android:name=".simple.ResultViewer"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MeasureMenager"
+            android:name=".simple.MeasureMenager"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
         <activity

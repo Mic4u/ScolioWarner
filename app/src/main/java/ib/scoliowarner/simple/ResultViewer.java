@@ -1,4 +1,4 @@
-package ib.scoliowarner;
+package ib.scoliowarner.simple;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,6 +17,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
+
+import ib.scoliowarner.R;
 
 public class ResultViewer extends AppCompatActivity {
 

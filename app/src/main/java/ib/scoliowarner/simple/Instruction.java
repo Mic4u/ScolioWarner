@@ -1,9 +1,11 @@
-package ib.scoliowarner;
+package ib.scoliowarner.simple;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.TextView;
+
+import ib.scoliowarner.R;
 
 public class Instruction extends AppCompatActivity {
 

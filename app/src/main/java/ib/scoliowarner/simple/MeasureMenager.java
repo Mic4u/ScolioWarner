@@ -1,4 +1,4 @@
-package ib.scoliowarner;
+package ib.scoliowarner.simple;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,6 +17,11 @@ import java.io.IOException;
 import java.util.Calendar;
 import java.util.Date;
 
+import ib.scoliowarner.MainActivity;
+import ib.scoliowarner.R;
+import ib.scoliowarner.simple.Calibrate;
+import ib.scoliowarner.simple.Measure;
+
 public class MeasureMenager extends AppCompatActivity {
 
 
@@ -27,8 +32,8 @@ public class MeasureMenager extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_measure_menager);
 
-        boolean calibrated= MainActivity.Constant.calibrated;
-        boolean finished= MainActivity.Constant.finished;
+        boolean calibrated= SimpleMain.Constant.calibrated;
+        boolean finished= SimpleMain.Constant.finished;
 
         Button saveBtn=findViewById(R.id.saveBtn);
         if(!finished) saveBtn.setEnabled(false);
@@ -53,7 +58,7 @@ public class MeasureMenager extends AppCompatActivity {
         Intent intent = new Intent(this, Measure.class);
         startActivity(intent);
 
-        MainActivity.Constant.finished=true;
+        SimpleMain.Constant.finished=true;
         Button saveBtn=findViewById(R.id.saveBtn);
         saveBtn.setEnabled(true);
     }
@@ -73,9 +78,9 @@ public class MeasureMenager extends AppCompatActivity {
 
 
         String measureText= currentTime.toString()+": \n"+
-                cobbanglestring+": "+(MainActivity.Constant.cobb_angle +"°\n")+
-                rightanglestring+": "+(MainActivity.Constant.max_angle +"°\n")+
-                leftanglestring+": "+(-MainActivity.Constant.min_angle +"°\n")+
+                cobbanglestring+": "+(SimpleMain.Constant.cobb_angle +"°\n")+
+                rightanglestring+": "+(SimpleMain.Constant.max_angle +"°\n")+
+                leftanglestring+": "+(-SimpleMain.Constant.min_angle +"°\n")+
                 "\n";
 
         if(!name.getText().toString().equals("")) {
@@ -89,7 +94,7 @@ public class MeasureMenager extends AppCompatActivity {
 
                 String toast = getResources().getString(R.string.toastSaved);
 
-                File myExternalFile = new File(getExternalFilesDir(FOLDERNAME), FILENAME);
+                File myExternalFile = new File(getExternalFilesDir(FOLDERNAME), FILENAME); ///sdcard/Android/data/ib.scoliowarner/files
 
                 try (FileOutputStream os = new FileOutputStream(myExternalFile)) {
                     os.write(measureText.getBytes());
